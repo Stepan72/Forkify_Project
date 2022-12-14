@@ -137,7 +137,7 @@ const init = function () {
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
-  console.log(`Hello World!`);
+  console.log(`Hello World! And My dear Friend!`);
 };
 init();
 ///
