@@ -40,7 +40,7 @@ export const loadRecipe = async function (id) {
     } else {
       state.recipe.bookmarked = false;
     }
-    console.log(state.recipe);
+    // console.log(state.recipe);
   } catch (err) {
     // console.error(`${err} 🔥🔥🔥`);
     throw err;
@@ -62,7 +62,7 @@ export const loadSearchResults = async function (query) {
       };
     });
     state.search.page = 1;
-    console.log(state.search);
+    // console.log(state.search);
   } catch (err) {
     throw err;
   }
@@ -116,7 +116,7 @@ let localBookmarksLoad = function () {
   let storage = JSON.parse(localStorage.getItem('bookmarks'));
   if (!storage) return;
   state.bookmarks = storage;
-  console.log(state.bookmarks);
+  // console.log(state.bookmarks);
 };
 
 localBookmarksLoad();
